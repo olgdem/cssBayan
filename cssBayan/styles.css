@@ -1,0 +1,79 @@
+body {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 26px;
+    font-weight: 400px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 1444px;
+
+
+
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+img {
+    margin: 0 0 5px;
+}
+.image {
+    width: 300px;
+    margin: 0 30% 0;
+}
+.faq {
+    max-width: 700px;
+    margin: 20px auto;
+    
+}
+.faq-item {
+    border-bottom: 1px solid red;
+}
+.faq-link {
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+.faq-title {
+    color: black;
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+   /* transition: all 1.5s ease-out;*/
+}
+/*.faq-title:hover {
+    background-color: red;
+}*/
+.faq-input {
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.faq-img {
+    display: none;
+    /*transition-delay: 1s;*/
+ }
+.faq-input:checked + .faq-img {
+    display: block;
+}
+.faq-input:hover + .faq-img {
+    display: block;
+    /*transition-delay: 5s;*/
+}
+
+.container {
+    background: rgb(229, 226, 226);
+    padding: 0;
+    border: 2px solid rgb(235, 233, 233);
+    width: 1200px;
+    height: 1400px;
+margin: auto;
+}
