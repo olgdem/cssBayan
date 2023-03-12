@@ -1,0 +1,112 @@
+body {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 26px;
+    font-weight: 400px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 1444px;
+
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    background: rgb(229, 226, 226);
+    padding: 0;
+    border: 5px solid rgb(249, 237, 237);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 1200px;
+    height: 1400px;
+    margin: auto;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 21%;
+    margin-bottom: 5px;
+}
+
+img {
+    margin: 0 0 5px;
+}
+
+.image {
+    width: 40%;
+    margin: 0 30% 0;
+}
+
+.faq {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid rgb(48, 47, 47);
+}
+
+.faq-title {
+    color: blue;
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+   transition: all .3s ease-out;
+}
+
+.faq-title:hover {
+    color: black;
+}
+
+.faq-input {
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.faq-img {
+    display: none;
+ }
+
+.faq-title:after {
+    font-family: FontAwesome;
+    content: "\2b";
+    display: inline-block;
+    position: absolute;
+    right: 35%;
+    width: 20px; 
+    overflow: hidden;
+    transition: all .1s ease-out; 
+}   
+
+.faq-input:checked + .faq-img {
+    display: block;
+}
+
+.faq-input:hover + .faq-img {
+    display: block;
+}
+
+.faq-input:active + .faq-title:after {
+    
+}
+
+.faq-input:checked + .faq-title:after {
+    transform: rotate(45deg);
+}
+
+.faq-input:hover + .faq-title:after {
+    transform: rotate(45deg);
+}
+
+
+
+
+
